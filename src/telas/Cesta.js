@@ -18,18 +18,16 @@ export default function Cesta() {
                     <Text style={estilos.nomeFazenda}>Jenny Jack Form</Text>
                 </View>
                 <Text style={estilos.descricao}>Uma cesta com produtos selecionados cuidadosamente da fazenda direto para sua cozinha</Text>
-                <Text style={estilos.preco}>R$ 40,00</Text>
+                <Text style={estilos.preco}>R$ 40,00</Text>     
             </View>
         </>
-
     )
 }
-
 const estilos = StyleSheet.create({
     topo: {
         width: "100%",
         height: 578 / 768 * width,
-        fontFamily:'Montserrat'
+
 
     },
     titulo: {
@@ -50,20 +48,21 @@ const estilos = StyleSheet.create({
         fontSize: 26,
         lineHeight: 42,
         color: '#464646',
-        fontWeight: 'bold'
+        fontFamily: 'MontserratBold'
     },
     nomeFazenda: {
         fontSize: 16,
         lineHeight: 26,
-        marginLeft:12
+        marginLeft: 12,
+        fontFamily: 'MontserratRegular'
     },
-    fazenda:{
-        flexDirection:'row',
-        paddingVertical:12
+    fazenda: {
+        flexDirection: 'row',
+        paddingVertical: 12
     },
-    imagemFazenda:{
-        width:32,
-        height:32
+    imagemFazenda: {
+        width: 32,
+        height: 32
     },
     descricao: {
         color: "#a3a3a3",
