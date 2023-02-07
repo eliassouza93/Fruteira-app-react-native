@@ -2,23 +2,23 @@ import React from 'react'
 import { Dimensions, StyleSheet, Text, Image, View } from 'react-native'
 import topo from '../../assets/topo.png'
 import logo from '../../assets/logo.png'
-
+import Texto from '../../components/Texto'
 const width = Dimensions.get('screen').width
 
 export default function Cesta() {
+
     return (
         <>
             <Image source={topo} style={estilos.topo} />
-            <Text style={estilos.titulo}>Detalhe da cesta</Text>
-
+            <Texto style={estilos.titulo}>Detalhe da cesta</Texto>
             <View style={estilos.cesta} >
-                <Text style={estilos.nome}>Cesta de Verduras</Text>
+                <Texto style={estilos.nome}>Cesta de Verduras</Texto>
                 <View style={estilos.fazenda}>
                     <Image style={estilos.imagemFazenda} source={logo}></Image>
-                    <Text style={estilos.nomeFazenda}>Jenny Jack Form</Text>
+                    <Texto style={estilos.nomeFazenda}>Jenny Jack Form</Texto>
                 </View>
-                <Text style={estilos.descricao}>Uma cesta com produtos selecionados cuidadosamente da fazenda direto para sua cozinha</Text>
-                <Text style={estilos.preco}>R$ 40,00</Text>     
+                <Texto style={estilos.descricao}>Uma cesta com produtos selecionados cuidadosamente da fazenda direto para sua cozinha</Texto>
+                <Text style={estilos.preco}>R$ 40,00</Text>
             </View>
         </>
     )
@@ -48,13 +48,13 @@ const estilos = StyleSheet.create({
         fontSize: 26,
         lineHeight: 42,
         color: '#464646',
-        fontFamily: 'MontserratBold'
+        fontWeight: 'bold'
     },
     nomeFazenda: {
         fontSize: 16,
         lineHeight: 26,
         marginLeft: 12,
-        fontFamily: 'MontserratRegular'
+
     },
     fazenda: {
         flexDirection: 'row',
