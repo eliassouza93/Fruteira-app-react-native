@@ -15,7 +15,7 @@ export default function Detalhes({ nome, logoFazenda, nomeFazenda, descricao, pr
             <Texto style={estilos.descricao}>{descricao} </Texto>
             <Texto style={estilos.preco}>{preco}</Texto>
 
-            <TouchableOpacity style={estilos.botao} onPress={() => { mensagem }}>
+            <TouchableOpacity style={estilos.botao} onPress={() => {}}>
                 <Texto style={estilos.textoBotao}>{botao}</Texto>
             </TouchableOpacity>
 
